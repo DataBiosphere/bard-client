@@ -25,7 +25,7 @@ import Config from './config'
 function filterReferrer(defaultProps) {
   const referringDomain = defaultProps['referring_domain'];
   if (Config.DSP_WEB_UI_ROOTS.includes(referringDomain)) {
-    delete defaultProps['referrer']
+    defaultProps['referrer'] = new URL(referringDomain).hostname
   }
   return defaultProps
 }
