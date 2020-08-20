@@ -11,6 +11,10 @@ them with properties common across DSP, like "referrer", "browser",
 Those custom analytics modules post to
 [Bard server](https://github.com/DataBiosphere/bard), which posts to Mixpanel.
 
+Eventually, this library may be expanded to also include both a utility `logToBard`
+function, and or default instrumentation of events, but for now its focus is on
+standardizing a set of event properties.
+
 # Installation
 
 Install Bard client [from NPM](https://www.npmjs.com/package/@databiosphere/bard-client) like so:
@@ -27,7 +31,7 @@ By adding two lines for Bard client code--an import and a call to getDefaultProp
 analytics with default properties shared across all DSP.
 
 ```
-import { getDefaultProperties } from '@databiosphere/bard-client' // importing the function from bard-client
+import { getDefaultProperties } from '@databiosphere/bard-client' // Import the function from Bard client
 
 function logToBard(name, customProps={}) {
   const appPath = trimPrivateData(window.location.pathname)
@@ -35,7 +39,7 @@ function logToBard(name, customProps={}) {
   const props = Object.assign(customProps, {
     appId: 'awesome-dsp-web-ui',
     appPath
-  }, getDefaultProperties()) // appending the default properties to the payload sent to bard
+  }, getDefaultProperties()) // Append the default properties to the payload sent to Bard
 
   const body = {
     body: JSON.stringify({
