@@ -27,7 +27,7 @@ By adding two lines for Bard client code--an import and a call to getDefaultProp
 analytics with default properties shared across all DSP.
 
 ```
-import { getDefaultProperties } from '@databiosphere/bard-client' // Extra line 1
+import { getDefaultProperties } from '@databiosphere/bard-client' // importing the function from bard-client
 
 function logToBard(name, customProps={}) {
   const appPath = trimPrivateData(window.location.pathname)
