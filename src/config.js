@@ -7,7 +7,7 @@
 var Config = {
   DEBUG: false,
   LIB_VERSION: '0.0.1',
-  DSP_PORTALS: [
+  DSP_WEB_UI_ROOTS: [
     // Fully-qualified domain names for production DSP web UIs
     'terra.bio',
     'singlecell.broadinstitute.org'

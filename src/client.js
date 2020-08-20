@@ -1,3 +1,7 @@
+/**
+* @fileoverview Bard client library for shared DSP client-side analytics
+*/
+
 import {_} from './utils'
 import Config from './config'
 
@@ -20,7 +24,7 @@ import Config from './config'
  */
 function filterReferrer(defaultProps) {
   const referringDomain = defaultProps['referring_domain'];
-  if (Config.DSP_PORTALS.includes(referringDomain)) {
+  if (Config.DSP_WEB_UI_ROOTS.includes(referringDomain)) {
     delete defaultProps['referrer']
   }
   return defaultProps
