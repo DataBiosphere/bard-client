@@ -2,7 +2,7 @@
   "name": "@databiosphere/bard-client",
   "version": "0.0.1",
   "main": "src/client.js",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "scripts": {
     "lint": "eslint \"src/**/*.js\""
   },
