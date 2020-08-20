@@ -32,7 +32,7 @@ import { getDefaultProperties } from '@databiosphere/bard-client' // Extra line 
 function logToBard(name, customProps={}) {
   const appPath = trimPrivateData(window.location.pathname)
 
-  props = Object.assign(customProps, {
+  const props = Object.assign(customProps, {
     appId: 'awesome-dsp-web-ui',
     appPath
   }, getDefaultProperties()) // Extra line 2
@@ -52,7 +52,7 @@ function logToBard(name, customProps={}) {
     }
   }
 
-  init = Object.assign(defaultInit, body)
+  const init = Object.assign(defaultInit, body)
 
   fetch(`${bardDomain}/api/event`, init)
 
