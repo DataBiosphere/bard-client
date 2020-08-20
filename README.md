@@ -23,7 +23,7 @@ yarn add @databiosphere/bard-client
 
 Below is a simplified custom analytics module.
 
-With two extra lines for Bard client code, we can augment those custom
+By adding two lines for Bard client code--an import and a call to getDefaultProperties-- we can augment those custom
 analytics with default properties shared across all DSP.
 
 ```
@@ -57,4 +57,3 @@ function logToBard(name, customProps={}) {
   fetch(`${bardDomain}/api/event`, init)
 
 ```
-
