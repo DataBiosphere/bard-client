@@ -1,12 +1,6 @@
 {
   "name": "@databiosphere/bard-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "src/client.js",
-  "license": "BSD-3-Clause",
-  "scripts": {
-    "lint": "eslint \"src/**/*.js\""
-  },
-  "devDependencies": {
-    "eslint": "^7.7.0"
-  }
+  "license": "BSD-3-Clause"
 }
