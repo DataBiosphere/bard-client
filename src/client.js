@@ -2,16 +2,16 @@ import {_} from './utils'
 import Config from './config'
 
 /**
- * Removes full "referrer" in cases required by DSP policy
+ * Removes full "referrer" in cases required by DSP
  *
  * If navigating from e.g.:
  *
- *    - A Terra workspace to another Terra page, or
- *    - An SCP study to another SCP page
+ *   - A Terra workspace to another Terra page, or
+ *   - An SCP study to another SCP page
  *
- *  The "referrer" includes workspace name or study name.  DSP considers
- *  these private information not suitable to log in Mixpanel.  So here we
- *  strip referrer if the referring domain is for a DSP product.
+ * The "referrer" includes workspace name or study name.  DSP considers
+ * these private data not suitable to log in Mixpanel.  So here we strip
+ * referrer if the referring domain is for a DSP product.
  *
  * @param {Object} defaultProps
  */

@@ -1,3 +1,11 @@
+/**
+ * @fileoverview Functions for default analytics properties for DSP
+ *
+ * Mixpanel source code, modified for DSP requirements
+ *
+ * Derived from code in https://github.com/mixpanel/mixpanel-js
+ */
+
 import Config from './config'
 
 // since es6 imports are static and we run unit tests from the console, window won't be defined when importing this file

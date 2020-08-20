@@ -1,3 +1,9 @@
+/**
+* Mixpanel source code, modified for DSP requirements
+*
+* Derived from code in https://github.com/mixpanel/mixpanel-js
+*/
+
 var Config = {
   DEBUG: false,
   LIB_VERSION: '0.0.1',
