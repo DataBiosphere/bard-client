@@ -35,7 +35,7 @@ function logToBard(name, customProps={}) {
   const props = Object.assign(customProps, {
     appId: 'awesome-dsp-web-ui',
     appPath
-  }, getDefaultProperties()) // Extra line 2
+  }, getDefaultProperties()) // appending the default properties to the payload sent to bard
 
   const body = {
     body: JSON.stringify({
