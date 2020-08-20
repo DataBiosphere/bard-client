@@ -1,5 +1,5 @@
 /**
-* Mixpanel source code, modified for DSP requirements
+* @fileoverview Mixpanel source code, modified for DSP requirements
 *
 * Derived from code in https://github.com/mixpanel/mixpanel-js
 */
