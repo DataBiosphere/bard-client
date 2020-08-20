@@ -12,6 +12,9 @@ import Config from './config'
  * The "referrer" includes workspace name or study name.  DSP considers
  * these private data not suitable to log in Mixpanel.  So here we strip
  * referrer if the referring domain is for a DSP product.
+
+ * Full referrer is still useful for external domains (and can be truncated
+ * or omitted by them as they desire), so we retain it for those cases.
  *
  * @param {Object} defaultProps
  */
