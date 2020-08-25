@@ -1,6 +1,6 @@
 {
   "name": "@databiosphere/bard-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/client.js",
   "license": "BSD-3-Clause"
 }
