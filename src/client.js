@@ -40,7 +40,7 @@ function filterReferrer(defaultProps, dspRoots=[]) {
   });
 
   if (hasDspReferrer) {
-    defaultProps['referrer'] = new URL(referringDomain).hostname
+    defaultProps['referrer'] = new URL(defaultProps['referrer']).hostname
   }
   return defaultProps
 }
