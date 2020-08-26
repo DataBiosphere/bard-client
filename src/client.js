@@ -21,7 +21,7 @@ import Config from './config'
  * or omitted by them as they desire), so we retain it for those cases.
  *
  * @param {Object} defaultProps - Default DSP properties for Mixpanel
- * @param {Array} webRoots - Domain patterns for which referrer should be
+ * @param {Array} dspRoots - Domain patterns for which referrer should be
  *  truncated.  Useful if current DSP domain is absent from config.js.
  */
 function filterReferrer(defaultProps, dspRoots=[]) {
@@ -46,7 +46,7 @@ function filterReferrer(defaultProps, dspRoots=[]) {
 }
 
 /**
- * @param {Array} webRoots - Domains to filter referrer from.  Useful if
+ * @param {Array} dspRoots - Domains to filter referrer from.  Useful if
  *                           current DSP domain is absent from config.js.
  *
  * @return {Object} Default DSP properties for Mixpanel
