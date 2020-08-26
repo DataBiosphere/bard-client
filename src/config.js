@@ -6,7 +6,7 @@
 
 var Config = {
   DEBUG: false,
-  LIB_VERSION: '0.0.3', // Ensure this matches package.json
+  LIB_VERSION: '0.1.0', // Ensure this matches package.json
   DSP_WEB_UI_ROOTS: [  // Domain name patterns for DSP web UIs
     // Matches app.terra.bio, etc.
     /terra\.bio/,
